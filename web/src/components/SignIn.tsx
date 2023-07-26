@@ -1,6 +1,6 @@
 import { User } from 'lucide-react'
 
-export function SingIn() {
+export function SignIn() {
   return (
     <a
       href={`https://github.com/login/oauth/authorize?client_id=${process.env.NEXT_PUBLIC_GITHUB_CLIENT_ID}`}

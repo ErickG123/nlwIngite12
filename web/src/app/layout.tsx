@@ -7,7 +7,7 @@ import {
 
 import { Hero } from '@/components/Hero'
 import { Profile } from '@/components/Profile'
-import { SingIn } from '@/components/SingIn'
+import { SignIn } from '@/components/SignIn'
 import { Copyright } from '@/components/Copyright'
 import { cookies } from 'next/headers'
 
@@ -42,7 +42,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
             <div className="absolute bottom-0 right-2 top-0 w-2 bg-stripes" />
 
             {/* Sing In */}
-            {isAuthenticated ? <Profile /> : <SingIn />}
+            {isAuthenticated ? <Profile /> : <SignIn />}
 
             {/* Hero */}
             <Hero />
